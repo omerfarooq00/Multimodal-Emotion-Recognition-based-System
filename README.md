@@ -5,23 +5,37 @@ This project focuses on building a multimodal emotion recognition system using b
 ## Project Structure
 
 ```
-multimodal-emotion-recognition/
-├── data/
-│   ├── FER-2013/           # Facial Expression Recognition dataset
-│   │   ├── train/          # Training images
-│   │   └── test/           # Testing images
-│   └── twitter_dataset.csv  # Twitter dataset
-├── notebooks/
-│   └── emotion_analysis.ipynb  # Jupyter notebook for analysis
-├── src/
-│   ├── data_processing.py     # Data loading and preprocessing
-│   ├── feature_extraction.py  # Feature extraction from text and images
-│   ├── model.py              # Model architecture and training
-│   └── utils.py              # Utility functions
-├── models/                   # Saved models
-├── results/                  # Output results and visualizations
+Multimodal-Emotion-Recognition-System/
+│
+├── data/                      # Data directory
+│   └── raw/                   # Raw data files
+│
+├── notebooks/                 # Jupyter notebooks
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_model_development.ipynb
+│   ├── 04_model_evaluation.ipynb
+│   └── 05_visualization_and_reporting.ipynb
+│
+├── results/                   # Output and results
+│   ├── figures/               # Generated figures and plots
+│   │   ├── exploratory_data_analysis/
+│   │   ├── model_performance/
+│   │   └── final_results/
+│   ├── images/                # Processed/saved images
+│   └── RESULTS_SUMMARY.md      # Summary of results
+│
+├── src/                      # Source code
+│   └── (Python modules)
+│
+├── FInal_code.ipynb          # Main Jupyter notebook
+├── extract_images.py          # Image extraction script
+├── mulitmodal_emotion_omer_dar.py  # Main Python script
+├── organize_results.py        # Results organization script
+│
+├── README.md                 # Project documentation
 ├── requirements.txt          # Python dependencies
-└── README.md                # This file
+└── setup.py                 # Package configuration
 ```
 
 ## Datasets
@@ -59,13 +73,11 @@ multimodal-emotion-recognition/
 ## Models
 
 ### 1. Text Classification
-- BERT-based model for text emotion classification
-- LSTM/GRU networks
-- Traditional ML models (SVM, Random Forest)
+- RF, ANN, and DBN for text emotion classification
+
 
 ### 2. Image Classification
-- CNN architectures (VGG, ResNet, EfficientNet)
-- Transfer learning with pre-trained models
+- Neural Network architectures (VGG, ResNet, EfficientNet)
 - Custom CNN architectures
 
 ### 3. Multimodal Fusion
@@ -130,15 +142,8 @@ results = model.evaluate(test_loader)
 print(f"Test Accuracy: {results['accuracy']:.4f}")
 ```
 
-## Results
 
-### Performance Metrics
 
-| Model | Accuracy | Precision | Recall | F1-Score |
-|-------|----------|-----------|--------|----------|
-| Text-only | 0.65 | 0.64 | 0.63 | 0.64 |
-| Image-only | 0.72 | 0.71 | 0.70 | 0.71 |
-| Multimodal | 0.83 | 0.82 | 0.83 | 0.82 |
 
 ### Key Findings
 
@@ -159,17 +164,15 @@ print(f"Test Accuracy: {results['accuracy']:.4f}")
 
 ### Result Visualizations
 
-#### 1. Model Performance Comparison
+####  Model Performance
 
-![Model Comparison](results/figures/model_performance/output_10.png)
+#### 1. Confusion Matrix
 
-#### 2. Confusion Matrix
+![Confusion Matrix](results/figures/final_results/output_40.png)
+![Confusion Matrix](results/figures/final_results/output_41.png)
+![Confusion Matrix](results/figures/final_results/output_42.png)
 
-![Confusion Matrix](results/figures/final_results/output_20.png)
 
-#### 3. Training Progress
-
-![Training Curves](results/figures/model_performance/output_15.png)
 
 ### Detailed Analysis
 
@@ -203,6 +206,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - FER-2013 dataset
-- Hugging Face Transformers
+- Twitter dataset
 - PyTorch and TensorFlow communities
 - All open-source contributors
