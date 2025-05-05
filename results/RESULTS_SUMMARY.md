@@ -23,8 +23,10 @@ results/
 - Data preprocessing visualizations
 
 ![EDA Example](figures/exploratory_data_analysis/output_0.png)
-![EDA Example](figures/exploratory_data_analysis/output_29.png)
-![EDA Example](figures/exploratory_data_analysis/output_30.png)
+
+![EDA Example](results/figures/images/output_29.png)
+![EDA Example](results/figures/images/output_30.png)
+
 
 
 
