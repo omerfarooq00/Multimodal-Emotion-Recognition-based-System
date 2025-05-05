@@ -6,10 +6,7 @@ This project focuses on building a multimodal emotion recognition system using b
 
 ```
 Multimodal-Emotion-Recognition-System/
-│
-├── data/                      # Data directory
-│   └── raw/                   # Raw data files
-│
+
 ├── notebooks/                 # Jupyter notebooks
 │   ├── 01_data_exploration.ipynb
 │   ├── 02_feature_engineering.ipynb
