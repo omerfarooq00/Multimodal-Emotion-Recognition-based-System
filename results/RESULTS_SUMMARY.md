@@ -24,21 +24,12 @@ results/
 
 ![EDA Example](figures/exploratory_data_analysis/output_0.png)
 
-### 2. Model Performance
 
-- Training and validation accuracy/loss curves
-- Confusion matrices
-- Performance metrics across different models
 
-![Model Performance](figures/model_performance/output_10.png)
+![EDA Example](figures/exploratory_data_analysis/output_29.png)
+![EDA Example](figures/exploratory_data_analysis/output_30.png)
 
-### 3. Final Results
 
-- Comparison of model performance
-- Visualizations of model predictions
-- Error analysis
-
-![Final Results](figures/final_results/output_20.png)
 
 ## How to Reproduce
 
