@@ -24,8 +24,6 @@ results/
 
 ![EDA Example](figures/exploratory_data_analysis/output_0.png)
 
-![EDA Example](results/images/output_29.png)
-![EDA Example](results/images/output_30.png)
 
 
 
